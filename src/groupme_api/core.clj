@@ -3,7 +3,6 @@
             [groupme-api.endpoints :as endpoints]))
 
 (def ^:dynamic *token*)
-(def api-root "https://api.groupme.com/v3")
 
 (defn bot-send-message
   [text & {:keys [token] :or {token *token*}}]
